@@ -8,7 +8,7 @@ namespace COMP123_M2020_FinalExam
 {
     public static class Program
     {
-        public static Character character = new Character();
+        public static Character character;
         public static GenerateNameForm generateNameForm;
         public static SplashForm splashForm;
 
@@ -24,6 +24,7 @@ namespace COMP123_M2020_FinalExam
 
             generateNameForm = new GenerateNameForm();
             splashForm = new SplashForm();
+            character = new Character();
 
             Application.Run(splashForm);
         }

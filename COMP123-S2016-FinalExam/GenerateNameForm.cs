@@ -16,5 +16,26 @@ namespace COMP123_M2020_FinalExam
         {
             InitializeComponent();
         }
+
+        public void GenerateNames()
+        {
+            var random = new Random();
+            
+            int index = random.Next(FirstNameListBox.Items.Count);
+            string firstName = FirstNameListBox.Items[index].ToString();
+            FirstNameTextBox.Text = firstName;
+            string lastName = LastNameListBox.Items[index].ToString();
+            LastNameTextBox.Text = lastName;
+        }
+
+        private void GenerateNameForm_Load(object sender, EventArgs e)
+        {
+            GenerateNames();
+        }
+
+        private void GenerateButton_Click(object sender, EventArgs e)
+        {
+            GenerateNames();
+        }
     }
 }
