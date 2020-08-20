@@ -12,6 +12,10 @@ using FontAwesome.Sharp;
 
 namespace COMP123_M2020_FinalExam
 {
+    //Student: Gurvir Singh #301108852
+    //File: Final Test
+    //Course: Programming 2
+    //Section: 001
     public partial class AbilityGeneratorForm : Form
     {
         // private Instance Object
@@ -181,6 +185,11 @@ namespace COMP123_M2020_FinalExam
 
             // Step 5 - Show the next form
             raceAndClassForm.Show();
+        }
+
+        private void AbilityGeneratorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

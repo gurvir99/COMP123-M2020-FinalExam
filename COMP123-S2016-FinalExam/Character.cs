@@ -24,6 +24,7 @@ namespace COMP123_M2020_FinalExam
         public string FirstName { get; set; }
        
         public string LastName { get; set; }
+        
 
         public Character (string first_name="", string last_name="", string strength="", string dexterity="", string constitution="",
             string intelligence="", string wisdom="", string charisma="", string race="")

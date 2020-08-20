@@ -11,6 +11,7 @@ namespace COMP123_M2020_FinalExam
         public static Character character;
         public static GenerateNameForm generateNameForm;
         public static SplashForm splashForm;
+        public static AbilityGeneratorForm abilityGeneratorForm;
 
         /// <summary>
         /// The main entry point for the application.
@@ -25,6 +26,7 @@ namespace COMP123_M2020_FinalExam
             generateNameForm = new GenerateNameForm();
             splashForm = new SplashForm();
             character = new Character();
+            abilityGeneratorForm = new AbilityGeneratorForm();
 
             Application.Run(splashForm);
         }

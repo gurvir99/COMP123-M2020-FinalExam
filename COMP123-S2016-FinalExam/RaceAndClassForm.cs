@@ -11,6 +11,10 @@ using System.Windows.Forms;
 
 namespace COMP123_M2020_FinalExam
 {
+    //Student: Gurvir Singh #301108852
+    //File: Final Test
+    //Course: Programming 2
+    //Section: 001
     public partial class RaceAndClassForm : Form
     {
         public AbilityGeneratorForm previousForm;
@@ -40,6 +44,9 @@ namespace COMP123_M2020_FinalExam
             RadioButton selectedRace = (RadioButton)sender;
 
             this._selectedRace = selectedRace.Text;
+
+            Program.character.Race = this._selectedRace;
+
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -49,6 +56,18 @@ namespace COMP123_M2020_FinalExam
 
             finalForm.Show();
             this.Hide();
+        }
+
+        private void RaceAndClassForm_Load(object sender, EventArgs e)
+        {
+            Program.character.Race = this._selectedRace;
+        }
+
+        private void RaceAndClassForm_Activated(object sender, EventArgs e)
+        {
+            Program.character.Race = this._selectedRace;
+
+
         }
     }
 }

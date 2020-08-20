@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace COMP123_M2020_FinalExam
 {
+    //Student: Gurvir Singh #301108852
+    //File: Final Test
+    //Course: Programming 2
+    //Section: 001
     public partial class FinalForm : Form
     {
         public RaceAndClassForm previousForm { get; set; }
@@ -32,11 +36,46 @@ namespace COMP123_M2020_FinalExam
         {
             this.previousForm.Show();
             this.Close();
+            FirstNameTextBox.Clear();
+            LastNameTextBox.Clear();
+            StrengthTextBox.Clear();
+            DexterityTextBox.Clear();
+            ConstitutionTextBox.Clear();
+            WisdomTextBox.Clear();
+            CharismaTextBox.Clear();
+            IntelligenceTextBox.Clear();
+            RaceTextBox.Clear();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Text = Program.character.FirstName;
+            LastNameTextBox.Text = Program.character.LastName;
+            StrengthTextBox.Text = Program.character.Strength;
+            DexterityTextBox.Text = Program.character.Dexterity;
+            ConstitutionTextBox.Text = Program.character.Constitution;
+            WisdomTextBox.Text = Program.character.Wisdom;
+            CharismaTextBox.Text = Program.character.Charisma;
+            IntelligenceTextBox.Text = Program.character.Intelligence;
+            RaceTextBox.Text = Program.character.Race;
+        }
+
+        private void FinalForm_Activated(object sender, EventArgs e)
+        {
+            FirstNameTextBox.Text = Program.character.FirstName;
+            LastNameTextBox.Text = Program.character.LastName;
+            StrengthTextBox.Text = Program.character.Strength;
+            DexterityTextBox.Text = Program.character.Dexterity;
+            ConstitutionTextBox.Text = Program.character.Constitution;
+            WisdomTextBox.Text = Program.character.Wisdom;
+            CharismaTextBox.Text = Program.character.Charisma;
+            IntelligenceTextBox.Text = Program.character.Intelligence;
+            RaceTextBox.Text = Program.character.Race;
         }
     }
 }
