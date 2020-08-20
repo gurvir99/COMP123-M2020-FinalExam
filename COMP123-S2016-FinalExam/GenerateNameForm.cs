@@ -23,18 +23,24 @@ namespace COMP123_M2020_FinalExam
 
         public void GenerateNames()
         {
+            //istantiate new random variable of typer Random
             var random = new Random();
-            
+            //new variable int to select random index from FirstNameListBox
             int index = random.Next(FirstNameListBox.Items.Count);
+            //new variable string firstname
             string firstName = FirstNameListBox.Items[index].ToString();
             FirstNameTextBox.Text = firstName;
+            //new variable string lastname
             string lastName = LastNameListBox.Items[index].ToString();
             LastNameTextBox.Text = lastName;
         }
 
+        //private methods
         private void GenerateNameForm_Load(object sender, EventArgs e)
         {
+            //generateNames method called
             GenerateNames();
+            //assigned values to Character class properties
             Program.character.FirstName = FirstNameTextBox.Text;
             Program.character.LastName = LastNameTextBox.Text;
         }

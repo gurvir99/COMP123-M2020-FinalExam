@@ -23,6 +23,7 @@ namespace COMP123_M2020_FinalExam
             InitializeComponent();
         }
 
+        //private methods
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Step 1 - instantiate an object of the AboutBox form
@@ -36,6 +37,8 @@ namespace COMP123_M2020_FinalExam
         {
             this.previousForm.Show();
             this.Close();
+
+            //clear the textboxes
             FirstNameTextBox.Clear();
             LastNameTextBox.Clear();
             StrengthTextBox.Clear();
@@ -49,11 +52,13 @@ namespace COMP123_M2020_FinalExam
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //exit application
             Application.Exit();
         }
 
         private void FinalForm_Load(object sender, EventArgs e)
         {
+            //assigned values to textboxes when the form loads
             FirstNameTextBox.Text = Program.character.FirstName;
             LastNameTextBox.Text = Program.character.LastName;
             StrengthTextBox.Text = Program.character.Strength;
@@ -67,6 +72,7 @@ namespace COMP123_M2020_FinalExam
 
         private void FinalForm_Activated(object sender, EventArgs e)
         {
+            //assigned values to textboxes when the form is activated
             FirstNameTextBox.Text = Program.character.FirstName;
             LastNameTextBox.Text = Program.character.LastName;
             StrengthTextBox.Text = Program.character.Strength;

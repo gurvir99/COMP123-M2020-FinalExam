@@ -22,10 +22,16 @@ namespace COMP123_M2020_FinalExam
             InitializeComponent();
         }
 
+        //private methods
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
+            //the generateNameForm will open
             Program.generateNameForm.Show();
-            this.Hide();
+           
+            //the SplashForm will close
+             this.Hide();
+            
+            //the splashFormTimer_Tick event will occur only once
             SplashFormTimer.Enabled = false;
         }
     }
