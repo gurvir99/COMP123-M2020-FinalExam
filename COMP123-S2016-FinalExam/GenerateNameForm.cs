@@ -23,7 +23,7 @@ namespace COMP123_M2020_FinalExam
 
         public void GenerateNames()
         {
-            //istantiate new random variable of typer Random
+            //istantiate new random variable of type Random
             var random = new Random();
             //new variable int to select random index from FirstNameListBox
             int index = random.Next(FirstNameListBox.Items.Count);

@@ -26,7 +26,7 @@ namespace COMP123_M2020_FinalExam
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+             //istantiate new forms
             generateNameForm = new GenerateNameForm();
             splashForm = new SplashForm();
             character = new Character();

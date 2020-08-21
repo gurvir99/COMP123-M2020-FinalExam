@@ -11,6 +11,7 @@ namespace COMP123_M2020_FinalExam
     //Section: 001
     public class Character
     {
+        //public properties
         public string Strength { get; set; }
 
         public string Dexterity { get; set; }
@@ -29,7 +30,7 @@ namespace COMP123_M2020_FinalExam
        
         public string LastName { get; set; }
         
-
+        //constructor
         public Character (string first_name="", string last_name="", string strength="", string dexterity="", string constitution="",
             string intelligence="", string wisdom="", string charisma="", string race="")
         {
